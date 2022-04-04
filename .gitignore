@@ -1,0 +1,11 @@
+# Project exclude paths
+.gradle
+.idea
+build
+scripts
+application-oauth2.properties
+application-real-db.properties
+application-dev-db.properties
+application-aws.properties
+application-dev.properties
+bin

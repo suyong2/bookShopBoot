@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!--// main layout -->
+    <definition name="baseLayout"
+                template="/WEB-INF/views/common/layout.jsp">
+        <put-attribute name="title" value="레이아웃 페이지" />
+        <put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+        <put-attribute name="side" value="/WEB-INF/views/common/side.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+        <put-attribute name="quickMenu" value="/WEB-INF/views/common/quickMenu.jsp" />
+    </definition>
+    <!-- 로그인 요청에 대한 페이지 설정-->
+    <definition name="main" extends="baseLayout">
+        <put-attribute name="title" value="쇼핑몰 메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
+    </definition>
+
+    <definition name="goods-save" extends="baseLayout">
+        <put-attribute name="title" value="쇼핑몰 메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/main/goods-save.jsp" />
+    </definition>
+
+    <definition name="test-file" extends="baseLayout">
+        <put-attribute name="title" value="쇼핑몰 메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/test/test-file.jsp" />
+    </definition>
+
+    <definition name="hello" extends="baseLayout">
+        <put-attribute name="title" value="쇼핑몰 메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/test/hello.jsp" />
+    </definition>
+</tiles-definitions>
+
+
